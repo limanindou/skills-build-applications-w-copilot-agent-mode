@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+/* Resize the React logo */
+.App-logo {
+  height: 100px; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Add spacing below the logo */
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add new beautiful designs */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper spacing and alignment for the navbar and content */
+.navbar {
+  background-color: #007bff;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure it stays above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px; /* Add a small margin to position it slightly below the top */
+  margin-bottom: 20px; /* Add spacing below the navbar */
+  padding: 10px 20px; /* Add padding inside the navbar */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  margin-top: 0; /* Reset margin to avoid overlap */
+  margin-bottom: 0; /* Remove unnecessary margin */
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  margin-top: 10px; /* Add spacing to separate links from the brand */
+}
+
+.container {
+  margin-top: 60px; /* Ensure content starts below the navbar */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #007bff; /* Bootstrap primary blue */
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style tables */
+.table {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Add hover effect with light blue background */
+.table tbody tr:hover {
+  background-color: #e3f2fd; /* Light blue */
+  transition: background-color 0.3s ease;
+}
+
+/* Style buttons */
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Style links */
+a {
+  color: #007bff; /* Bootstrap primary blue */
+}
+a:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Add logo styling */
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Add favicon styling */
+.favicon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Add spacing between sections */
+.navbar + .container {
+  margin-top: 20px;
+}
+
+/* Add footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 10px;
+}
